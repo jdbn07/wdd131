@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Jim Davis Banchon Nunez</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Jim Davis Banchon Nunez">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>Hola esta es mi pagina principal</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - </h1>
+        <!-- <span class="highlight">Jim Davis Banchon Nunez</span> -->
+        <nav>
+            <a href="https://www.linkedin.com/in/jim-banchon-nunez/" title="My LinkedIn">LinkedIn</a>
+            <a href="https://byui.instructure.com/" >I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng&id=p7#p7" title="My Favorite Scripture">Scripture</a>
+            <a href="final-project.html">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Section 1</h2>
+            <p>Content for section 1.</p>
+            <img src="images/your-image1.jpg" alt="Description of image 1">
+            <a href="#">Resource 1</a>
+            <a href="#">Resource 2</a>
+            <a href="#">Resource 3</a>
+        </section>
+        <section class="card">
+            <h2>Section 2</h2>
+            <p>Content for section 2.</p>
+            <img src="images/your-image2.jpg" alt="Description of image 2">
+            <a href="#">Resource 4</a>
+            <a href="#">Resource 5</a>
+            <a href="#">Resource 6</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🧑🏻‍💻 Jim Banchon 🧑🏻‍💻 Guayaquil, Ecuador (EC)</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

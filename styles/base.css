@@ -1,0 +1,54 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Example using Google Fonts */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}

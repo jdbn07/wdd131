@@ -15,7 +15,6 @@
 		color: white;
 		text-align: center;
 		align-self: center;
-		/* margin-right: 3.5rem; */
 	}
 	
 	nav{
@@ -31,7 +30,7 @@
 	}
 
 	#menu {
-		display: none; /* hide hamburger button */
+		display: none;
 	}
 
 	.navigation {

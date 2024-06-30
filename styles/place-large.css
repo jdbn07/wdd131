@@ -1,0 +1,123 @@
+@media screen and (min-width: 600px){
+    :root {
+        --mexicoRed: red;
+        --mexicoGreen: green;
+        --mexicoWhite: white;
+    }
+    body{
+        font-family: "Jost", sans-serif;
+    }
+
+    header{
+        background-color: var(--mexicoGreen);
+        text-align: center;
+        color: var(--mexicoWhite);
+        padding: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    .data{
+        background-color: rgba(255, 255, 255, 0.8);
+        /* max-width: 25rem; */
+        width: 20rem;
+        height: 18rem;
+        position: absolute;
+        top: 15rem;
+        left: 15rem;
+        padding-top: 6rem;
+        padding-left: 2.5rem;
+    }
+
+    .data-title{
+        position: absolute;
+        background-color: var(--mexicoWhite);
+        padding: .5rem;
+        padding-left: 2rem;
+        color: green;
+        width: 18rem;
+        bottom: 18rem;
+        right: 3rem;
+    }
+
+    .data-left{
+        text-align: right;
+    }
+
+    .data-right{
+        text-align: left;
+    }
+
+    .weather{
+        background-color: rgba(255, 255, 255, 0.8);
+        width: 18rem;
+        height: 10rem;
+        position: absolute;
+        top: 55rem;
+        right: 12rem;
+        padding-top: 7.5rem;
+    }
+
+    .weather-title{
+        position: absolute;
+        background-color: var(--mexicoRed);
+        padding: .5rem;
+        padding-left: 2rem;
+        color: white;
+        width: 14rem;
+        bottom: 11.5rem;
+        right: 2.5rem;
+    }
+
+    .logo img{
+        width: 50px;
+        height: auto;
+        position: absolute;
+        top: 1.5rem;
+        left: 8.5rem;
+    }
+
+    .logo::after{
+        content: "---> You can visit now! <---";
+        position: absolute;
+        left: 3.7rem;
+        top: 5.5rem;
+        color: var(--mexicoGreen);
+    }
+
+    .weather-left{
+        text-align: right;
+    }
+
+    .weather-right{
+        text-align: left;
+    }
+
+    .data-table{
+        font-size: 20px;
+    }
+
+    .weather-table{
+        margin-left: 1.5rem;
+        font-size: 20px;
+    }
+
+    picture {
+        display: block;
+        max-width: 100%;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        text-align: center;
+        font-size: 18px;
+        background-color: var(--mexicoGreen);
+        color: var(--mexicoWhite);
+        margin-top: .5rem;
+        padding: .5px;
+    }
+}

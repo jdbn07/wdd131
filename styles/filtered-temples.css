@@ -1,0 +1,116 @@
+body {
+    font-family: "Pt Sans", sans-serif;
+    margin: 0 auto;
+}
+
+header {
+    background-color: black;
+    position: relative;
+}
+
+h1 {
+    color: white;
+    padding-left: 2.5rem;
+    align-self: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    padding: 0 0 30px 0;
+}
+
+#menu::before {
+    content: "☰";
+    color: rgb(255, 255, 255);
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    color: black;
+    background-color: white;
+}
+
+nav.open a {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+img {
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 5rem;
+}
+
+section{
+    background-color: rgba(13, 104, 156, 0.2);
+    padding: 2rem;
+    margin: 2rem;
+    color: black;
+    text-align: center;
+}
+
+section img{
+    height: 200px;
+    width: auto;
+}
+
+.description{
+    color: black;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    padding: .5px;
+}

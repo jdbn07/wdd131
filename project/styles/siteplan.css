@@ -1,0 +1,28 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+h1, h2 {
+  font-family: Arial, sans-serif;
+  color: #4CAF50;
+}
+
+header, footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #FFFFFF;
+}
+
+section {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #4CAF50;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

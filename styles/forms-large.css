@@ -1,0 +1,194 @@
+@media screen and (min-width: 900px) {
+
+    :root{
+        --form-background-color: rgb(22, 58, 106);
+        --titles: rgb(255, 255, 255);
+        --main-background-color: rgb(255, 255, 255);
+        --border-form: rgb(22, 58, 106);
+        --label-color: rgb(0, 0, 0);
+        --text-color: rgb(0, 0, 0);
+    }
+
+    /* BODY */
+    body{
+        font-family: "Chivo", sans-serif;
+		margin: 0 auto;
+		max-width: 70rem;
+    }
+    /* BODY */
+
+    /* HEADER */
+    h1{
+        background-color: var(--form-background-color);
+        color: var(--titles);
+        padding: 1.5rem;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    /* HEADER */
+
+    /* MAIN */
+    form{
+        border: solid 4px var(--form-background-color);
+        border-bottom: 0;
+        border-top: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    /* MAIN */
+
+    /* FORM */
+    .pr{
+        padding-left: 7rem;
+        padding-right: 7rem;
+        font-size: 1.3rem;
+    }
+
+    .productName{
+        padding-top: 1rem;
+    }
+
+    .pr select,
+    .pr [type="date"],
+    .pr [type="text"],
+    textarea{
+        display: block;
+        width: 100%;
+        height: auto;
+        font-size: 1.3rem;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+    }
+
+    .pr select,
+    .pr [type="date"],
+    .pr [type="text"],
+    textarea{
+        height: 3rem;
+    }
+
+    .cursive{
+        font-style: italic;
+    }
+
+    .optional{
+        color: var(--form-background-color);
+        font-style: italic;
+    }
+
+    .pr div{
+        padding-top: 1.5rem;
+    }
+
+    .pr label{
+        display: block;
+        margin-top: .8rem;
+    }
+
+    .pr input:required,
+    .pr select:required:invalid,
+    .pr input[type="date"]:required:invalid {
+        border-bottom: solid 4px red;
+    }
+
+    .pr input:required:valid,
+    .pr select:required:valid,
+    .pr input[type="date"]:required:valid {
+        border-bottom: solid 4px green;
+    }
+
+    .pr input[type="checkbox"] {
+        width: .9rem;
+        height: .9rem;
+        transform: scale(1.5);
+        margin-right: 0.5rem;
+    }
+
+    /* BUTTON */
+    .pr input[type="submit"]{
+        border: none;
+        background-image: linear-gradient(rgba(22, 58, 106, 0.801), rgb(22, 58, 106));
+        color: white;
+        border-radius: 10px;
+        padding: .8rem;
+        min-width: 49.7rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 1px 1px 4px #3b3b3b;
+        font-size: 1.5rem;
+    }
+    /* BUTTON */
+
+    /* FORM */
+
+    /* STARS */
+    .stars{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        align-items: center;
+        padding-bottom: 2rem;
+        max-height: 1rem;
+    }
+
+    input[type="radio"] {
+	    display: none;
+	    position: relative;
+	    caret-color: rgba(0, 0, 0, 0);
+    }
+
+    .stars > label {
+	    color: gold;
+	    width: 30px;
+	    height: 30px;
+	    font-size: 2rem;
+	    display: flex;
+	    align-items: center;
+	    caret-color: rgba(0, 0, 0, 0);
+        padding-top: 0;
+    }
+
+    .stars > label:hover {
+	    color: #000;
+    }
+
+    .stars > label::before {
+	    content: "\2606";
+
+    }
+
+    .stars input:checked ~ label::before {
+	    content: "\2605";
+
+    }
+
+    /* REQUIRED */
+    .required{
+        color: red;
+    }
+    /* REQUIRED */
+
+    /* STARS */
+
+    /* REVIEW HTML here appears the numbr of times the file is reviewed*/
+    .review{
+        font-size: 2rem;
+        color: var(--form-background-color);
+        text-align: center;
+    }
+    /* REVIEW HTML */
+
+    /* FOOTER */
+    footer{
+		text-align: center;
+		font-size: 18px;
+		background-color: var(--form-background-color);
+		color: white;
+        margin-top: 0;
+		/* margin-top: 30px; */
+		padding: .5px;
+	}
+    /* FOOTER */
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Form - Jim Davis Banchon Nunez</title>
+    <meta name="description" content="WDD 131 - Product Review Form - Jim Davis Banchon Nunez - Example of a simple form in HMTL.">
+    <meta name="author" content="Jim Davis Banchon Nunez BYU-Idaho WDD 130 course, Product Review Form">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <form method="get" action="review.html" class="pr">
+        <label class="productName">Product Name <span class="required">*</span>
+            <select id="product-name" name="product" required>
+                <option value="">Select a Product ...</option>
+            </select>
+        </label>
+
+        <div>Overall Rating <span class="required">*</span></div>
+        <div class="stars">
+            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+        </div>
+
+        <label>Date of Installation <span class="required">*</span>
+            <input type="date" id="installDate" name="installDate" required></label>
+
+        <div>Which features did you find useful in the product? <span class="cursive">(Check all that apply)</span></div>
+        <label><input type="checkbox" id="durability" name="durability" value="yes"> Durability</label>
+        <label><input type="checkbox" id="easeUse" name="easeUse" value="yes"> Ease of Use</label>
+        <label><input type="checkbox" id="perfomance" name="perfomance" value="yes"> Perfomance</label>
+        <label><input type="checkbox" id="design" name="design" value="yes"> Design</label>
+
+        <div>Written Review <span class="optional">(Optional)</span></div>
+        <textarea name="writtenReview" id="writtenReview" rows="3"></textarea>
+
+        <div>Your Name <span class="optional">(Optional)</span></div>
+        <input type="text" name="usersName" id="usersName" class="usersName" placeholder="Ex: Edgar Newton">
+
+        <input type="submit" value="Post Review">
+    </form>
+    <footer>
+        <p>©️ <span id="currentyear"></span> 🧑🏻‍💻 Jim Davis Banchon Nunez 🧑🏻‍💻 Guayaquil, Ecuador (EC)</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

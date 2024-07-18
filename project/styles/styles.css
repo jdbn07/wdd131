@@ -116,6 +116,7 @@ lb-close {
     font-size: 2rem; /* Tamaño del botón */
     color: #fff; /* Color del botón */
 }
+/* Estilos básicos para el contenedor del clima */
 #clima {
     position: absolute;
     top: 20px;
@@ -124,4 +125,26 @@ lb-close {
     color: white;
     padding: 10px;
     border-radius: 5px;
+    max-width: 300px;  /* Añadimos un ancho máximo */
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 600px) {
+    #clima {
+        position: relative;  /* Cambiamos a relative para pantallas pequeñas */
+        top: auto;
+        left: auto;
+        margin: 10px auto;  /* Centramos el contenedor en pantallas pequeñas */
+        width: 90%;  /* Ajustamos el ancho para pantallas pequeñas */
+    }
+}
+
+/* Media query para pantallas medianas */
+@media (min-width: 601px) and (max-width: 1024px) {
+    #clima {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 50%;  /* Ajustamos el ancho para pantallas medianas */
+    }
 }

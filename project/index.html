@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Página Turística</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="places.html">Tourist Places</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="presentacion">
+            <h1>Welcome to Our Tourist Page</h1>
+            <div class="presentacion-content">
+                <img src="images/guayaquil_home.jpg" alt="Imagen de presentación">
+                <p>Explore the best tourist places in our city with us. 
+                Our page offers you detailed information and recommendations on the most attractive destinations for your next vacation.</p>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galería de Fotos</h2>
+            <div class="galeria-fotos">
+                <div class="foto-item">
+                    <a href="images/atardecer_guayaquil.jpg" data-lightbox="galeria" data-title="Descripción Foto 1">
+                        <img src="images/atardecer_guayaquil.jpg" alt="Descripción Foto 1">
+                    </a>
+                    <p>Descripción Foto 1</p>
+                </div>
+                <div class="foto-item">
+                    <a href="images/melecon.jpg" data-lightbox="galeria" data-title="Descripción Foto 2">
+                        <img src="images/melecon.jpg" alt="Descripción Foto 2">
+                    </a>
+                    <p>Descripción Foto 2</p>
+                </div>
+                <div class="foto-item">
+                    <a href="images/rotonda.jpg" data-lightbox="galeria" data-title="Descripción Foto 3">
+                        <img src="images/rotonda.jpg" alt="Descripción Foto 3">
+                    </a>
+                    <p>Descripción Foto 3</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>🧑🏻‍💻 Jim Davis Banchon Nunez 🧑🏻‍💻 Guayaquil, Ecuador (EC)</p>
+        <p>Última modificación: <span id="fecha-modificacion"></span></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/* Tipografía y diseño general */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center; /* Centrar el contenido del encabezado */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center; /* Centrar todos los títulos */
+}
+
+#presentacion {
+    margin-bottom: 40px;
+}
+
+.presentacion-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.presentacion-content img {
+    flex: 1 1 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.presentacion-content p {
+    flex: 1 1 50%;
+    text-align: justify;
+}
+
+.galeria-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.foto-item {
+    flex: 1 1 calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.foto-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer; /* Indica que la imagen es clicable */
+}
+
+.foto-item p {
+    margin-top: 10px;
+}
+
+/* Adaptaciones para dispositivos móviles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .presentacion-content {
+        flex-direction: column;
+    }
+
+    .presentacion-content img,
+    .presentacion-content p {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .foto-item {
+        flex: 1 1 100%;
+    }
+}
+lb-close {
+    font-size: 2rem; /* Tamaño del botón */
+    color: #fff; /* Color del botón */
+}

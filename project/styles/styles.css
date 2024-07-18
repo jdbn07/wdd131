@@ -116,3 +116,12 @@ lb-close {
     font-size: 2rem; /* Tamaño del botón */
     color: #fff; /* Color del botón */
 }
+#clima {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}

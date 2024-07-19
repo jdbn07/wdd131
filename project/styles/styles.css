@@ -148,3 +148,38 @@ lb-close {
         width: 50%;  /* Ajustamos el ancho para pantallas medianas */
     }
 }
+#galeria-lugares {
+    text-align: center;
+}
+
+.galeria-lugares {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lugar-item {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.lugar-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.lugar-descripcion {
+    text-align: left;
+    padding: 10px;
+}
+@media (max-width: 768px) {
+    .lugar-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .lugar-item {
+        width: 100%;
+    }
+}

@@ -18,26 +18,51 @@
     </header>
     
     <main>
-        <h1>Contáctanos</h1>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
+        <section id="contacto">
+            <h2>Formulario de Contacto</h2>
+            <form id="contacto-form">
+                <div>
+                    <label for="nombres">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres" required>
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div>
+                    <label for="satisfaccion">Nivel de Satisfacción:</label>
+                    <select id="satisfaccion" name="satisfaccion" required>
+                        <option value="">Seleccione...</option>
+                        <option value="1">1 - Muy Insatisfecho</option>
+                        <option value="2">2 - Insatisfecho</option>
+                        <option value="3">3 - Neutral</option>
+                        <option value="4">4 - Satisfecho</option>
+                        <option value="5">5 - Muy Satisfecho</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" name="comentarios"></textarea>
+                </div>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer>
-        <p>Creado por [Tu Nombre]</p>
+        <p>🧑🏻‍💻 Jim Davis Banchon Nunez 🧑🏻‍💻 Guayaquil, Ecuador (EC)</p>
         <p>Última modificación: <span id="fecha-modificacion"></span></p>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

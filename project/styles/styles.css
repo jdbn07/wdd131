@@ -183,3 +183,51 @@ lb-close {
         width: 100%;
     }
 }
+#contacto {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contacto-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contacto-form div {
+    margin-bottom: 15px;
+}
+
+#contacto-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contacto-form input, #contacto-form select, #contacto-form textarea, #contacto-form button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#contacto-form button {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+#contacto-form button:hover {
+    background-color: #555;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    #contacto {
+        padding: 10px;
+    }
+}

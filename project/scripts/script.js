@@ -45,3 +45,33 @@ document.addEventListener("DOMContentLoaded", function() {
     const fechaModificacion = document.lastModified;
     document.getElementById('fecha-modificacion').textContent = fechaModificacion;
 });
+document.addEventListener("DOMContentLoaded", function() {
+    // Mostrar la última fecha de modificación
+    const fechaModificacion = document.lastModified;
+    document.getElementById('fecha-modificacion').textContent = fechaModificacion;
+
+    // Manejo del formulario
+    const form = document.getElementById('contacto-form');
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar el envío del formulario para pruebas
+        
+        // Obtener los datos del formulario
+        const nombres = document.getElementById('nombres').value;
+        const apellidos = document.getElementById('apellidos').value;
+        const email = document.getElementById('email').value;
+        const telefono = document.getElementById('telefono').value;
+        const satisfaccion = document.getElementById('satisfaccion').value;
+        const comentarios = document.getElementById('comentarios').value;
+
+        // Mostrar los datos en la consola (puedes cambiarlos para enviar a un servidor)
+        console.log(`Nombres: ${nombres}`);
+        console.log(`Apellidos: ${apellidos}`);
+        console.log(`Correo Electrónico: ${email}`);
+        console.log(`Número de Teléfono: ${telefono}`);
+        console.log(`Nivel de Satisfacción: ${satisfaccion}`);
+        console.log(`Comentarios: ${comentarios}`);
+        
+        // Resetear el formulario después de enviar
+        form.reset();
+    });
+});
